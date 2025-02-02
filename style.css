@@ -1,0 +1,82 @@
+/* Modern background with a gradient */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Calculator with a glassmorphism effect */
+.calculator {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+/* Stylish display screen */
+#display {
+    width: 94%;
+    height: 50px;
+    font-size: 26px;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-width: 1px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+/* Grid layout for buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Button styles with gradient effect */
+.btn {
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff00ff, #00FFFF);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Button hover and active effects */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+}
+
+/* Special styling for operator buttons */
+.btn.operator {
+    background: linear-gradient(135deg, #ff4500, #ff6600);
+}
+
+/* Equals button standout */
+.btn.equal {
+    background: linear-gradient(135deg, #00ff00, #009900);
+}
+
+/* Clear button styling */
+.btn.clear {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+}
+#history {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
